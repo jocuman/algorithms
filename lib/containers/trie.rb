@@ -17,6 +17,11 @@ class Containers::Trie
   def initialize
     @root = nil
   end
+    
+  # Returns true if the trie is empty, false otherwise.
+  def empty?
+    @root.nil?
+  end
   
   # Adds a key, value pair to the Trie, and returns the value if successful. The to_s method is
   # called on the parameter to turn it into a string.
